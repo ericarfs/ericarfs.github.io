@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./static/icone.png" />
+    <link rel='stylesheet' href='./static/style.css'>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <title>Erica Ribeiro</title>
+</head>
+<body>
+    <header>
+        <div class = "menu">
+            <div class="logo">
+              <span> &lt; ericarfs /&gt; </span>
+            </div>
+            <div class="link" >
+                <ul class="link_list"> 
+                  <li class="link_icon"><a href="" target="_blank"> <i class="fi fi-sc-envelope"></i> </a></li>
+                  <li class="link_icon"><a href="https://www.linkedin.com/in/ericarfs/" target="_blank"> <i class="fi fi-brands-linkedin"></i></a></li>
+                  <li class="link_icon"><a href="https://github.com/ericarfs" target="_blank"> <i class="fi fi-brands-github"></i> </a></li>
+                </ul>
+            </div>        
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="about_card">
+                <div class="about_info">
+                    <div class="about_name"> Érica Ribeiro F. dos Santos </div>
+                    Atualmente cursando Ciência da Computação na Universidade de São Paulo, . 
+                </div>
+                <div class="about_picture">
+
+                </div>
+            </div>
+            <div class="title_c">
+                <span class="section_title">PROJETOS</span>
+            </div>
+            <div class="container">
+                <div class="project_card" onclick="flipCard(this)">
+                    <div class="front_face" id="project_1"> 
+                        <div class="project_info">
+                            <div class="project_icon">
+                                <img src="./static/cards.svg" width="46px" height="46px"/>
+                            </div>
+                            <ul class="project_links">
+                                <li class="link_icon project_link"><a href="https://7b7cd575-5519-4b42-9d28-46085ff3c3f8.e1-us-east-azure.choreoapps.dev/" target="_blank"> <i class="fi fi-br-arrow-up-right-from-square"></i></a></li>
+                                <li class="link_icon project_link"><a href="https://github.com/ericarfs/MemoCards" target="_blank"> <i class="fi fi-brands-github"></i> </a></li>
+                            </ul>
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">MemoCards</span>
+                        </div>
+                        <div class="project_description">
+                            <div class="description">
+                                Aplicação web para a criação de flashcards para o estudo de linguagens.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back_face"> 
+                        <div class="project_image" id="project_image_1">
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">MemoCards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_card" onclick="flipCard(this)">
+                    <div class="front_face" id="project_2"> 
+                        <div class="project_info">
+                            <div class="project_icon">
+                                @
+                            </div>
+                            <div class="project_links">
+                                <li class="link_icon project_link"><a href="https://github.com/ericarfs/django-social-media-website" target="_blank"> <i class="fi fi-brands-github"></i> </a></li>
+                            </div>
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">YOUniverse</span>
+                        </div>
+                        <div class="project_description">
+                            <div class="description">
+                                Aplicação de rede social simples para troca de perguntas e respostas.
+                            </div>
+
+                            <div class="stack">
+                                aaa
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="back_face"> 
+                        <div class="project_image" id="project_image_2">
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">YOUniverse</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_card" onclick="flipCard(this)">
+                    <div class="front_face" id="project_3"> 
+                        <div class="project_info">
+                            <div class="project_icon"></div>
+                            <div class="project_links">
+                                <li class="link_icon project_link"><a href="https://ericaribeirof.github.io/memory-game/" target="_blank"> <i class="fi fi-br-arrow-up-right-from-square"></i></a></li>
+                                <li class="link_icon project_link"><a href="https://github.com/ericaribeirof/memory-game" target="_blank"> <i class="fi fi-brands-github"></i> </a></li>
+                            </div>
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">Memory Game</span>
+                        </div>
+                        <div class="project_description">
+                            <div class="description">
+                                Jogo da memória.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back_face">
+                        <div class="project_image" id="project_image_3">
+
+                        </div>
+                        <div class="title_c">
+                            <span class="project_title">Memory Game</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_c">
+                <span class="section_title">HABILIDADES</span>
+            </div>
+            <div class="container">
+                <div class="skills">
+                    <div class="skill_type">
+                        <span class="skill language"> Python </span>
+                        <span class="skill language"> Javascript </span>
+                        <span class="skill language"> Java </span>
+                        <span class="skill language"> C/C++ </span>
+                    </div>
+                    <div class="skill_type">
+                        <span class="skill tech"> HTML </span>
+                        <span class="skill tech"> CSS </span>
+                        <span class="skill tech"> API REST </span>
+                        <span class="skill tech"> React </span>
+                        <span class="skill tech"> Django </span>
+                        <span class="skill tech"> Django REST Framework </span>
+                        <span class="skill tech"> Flask </span>
+                    </div>
+                    <div class="skill_type">
+                        <span class="skill database"> SQL </span>
+                        <span class="skill database"> MySQL </span>
+                        <span class="skill database"> PostgreSQL </span>
+                        <span class="skill database"> Oracle </span>
+                        <span class="skill database"> PL/SQL </span>
+                        <span class="skill database"> SQLAlchemy </span>
+                        <span class="skill database"> NoSQL </span>
+                        <span class="skill database"> MongoDB </span>
+                    </div>
+                    <div class="skill_type">
+                        <span class="skill tool"> Pandas </span>
+                        <span class="skill tool"> Git </span>
+                        <span class="skill tool"> GitHub </span>
+                        <span class="skill tool"> Docker </span>
+                        <span class="skill tool"> Figma </span>
+                        <span class="skill tool"> Excel </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./static/script.js"></script>
+</body>
+</html>

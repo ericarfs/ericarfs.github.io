@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root{
+    --background: #D1AFC4;
+    --section_title: #462913;
+    --secondary: #839EC1;
+    --secondary-details: #EAEFF4;
+    --details: #BAD1AF;
+    --name: #841C5A;
+}
+
+html{
+    font-size: 100%;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Roboto Slab', serif;
+    word-wrap: break-word;
+    font-size: 1rem;
+
+}
+
+
+main{
+    margin-top: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    max-width: 1024px;
+    width: 98%;
+    min-height: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+
+/* header style*/
+header{
+    width: 100%;
+    min-height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    min-height: 70px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo{
+    flex: 1 0;
+    font-size: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 24px;
+    font-family: 'Patua One';
+    color: var(--name);
+}
+
+.link{
+    flex: 1 0;
+    height: 100%;
+    padding-right: 24px;
+}
+
+.link_list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    gap: min(30px, 2.2vw);  
+}
+  
+
+.link_icon{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.link_icon a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.link_icon .fi{
+    font-size: 40px;
+    color: var(--secondary);
+}
+
+.link_icon .fi:hover{
+    color: var(--secondary-details);
+}
+
+.about_card{
+    width: 100%;
+    background-color: white;
+    min-height: 360px;
+    border-radius: 20px;
+    padding: min(50px, 5vh);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.about_info{
+    width: 620px;
+    max-width: 100%;
+}
+
+.about_name{
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Patua One';
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.about_picture{
+    width: 280px;
+    height: 280px;
+    border: 8px solid #85A576;
+    border-radius: 160px 160px 20px 20px;
+    background-image: url("icone.png");
+    background-position: center;
+    background-size: contain;
+
+}
+
+.section_title{
+    font-family: 'Patua One';
+    font-size: 2.5rem;
+    color: var(--section_title);
+}
+
+.title_c{
+    width: 100%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+}
+
+.project_card{
+    width: 336px;
+    max-width: 100%;
+    min-height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    cursor: pointer;
+
+}
+
+.project_card:hover {
+    transform: scale(0.97);
+    transition: transform .5s;
+}
+ 
+.project_card.flipped {
+     transform: rotateY(180deg);
+}
+ 
+.front_face{
+     transform: rotateY(180deg);
+}
+
+.back_face, .front_face{
+    min-height: 360px;
+    width: 100%;
+    padding: 24px 16px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project_image{
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    background-color: var(--secondary-details);
+    border: 6px solid var(--details);
+    background-position: center;
+    background-size: cover;
+}
+
+.project_image img{
+    max-height: 258px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#project_image_1{
+    background-image: url("memocard.png");
+    
+}
+
+#project_image_2{
+    background-image: url("youniverse.png");
+
+}
+
+#project_image_3{
+    background-image: url("memorygame.png");
+}
+
+
+
+.project_title{
+    font-family: 'Patua One';
+    font-size: 2rem;
+}
+
+.project_info{
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project_icon{
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    background-color: #839EC1;
+    color: white;
+    font-family: 'Patua One';
+    font-size: 32px;
+    text-align:center;
+}
+
+.project_links{
+    height: 100%;
+    width: 92px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.project_link{
+    width: 46px;
+    height: 46px;
+}
+
+.project_link .fi{
+    font-size: 32px;
+    color: #85A576;
+}
+
+.project_link .fi:hover{
+    color: var(--details);
+}
+
+.project_description{
+    width: 100%;
+    min-height: 210px;
+    background-color: var(--secondary-details);
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid var(--secondary);
+}
+
+.description{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+}
+
+.skills{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 24px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill_type{
+    width: 100%;
+    min-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill{
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.tech{
+    background-color: var(--details);
+}
+
+.language{
+    background-color:rgba(133, 159, 193, 0.6);
+}
+
+.database{
+    background-color: lightgrey;
+}
+
+.tool{
+    background-color: var(--secondary-details);
+}
+
+
