@@ -12,6 +12,7 @@
     --secondary: #839EC1;
     --secondary-details: #EAEFF4;
     --details: #BAD1AF;
+    --other-details: #85A576;
     --name: #841C5A;
 }
 
@@ -127,13 +128,13 @@ header{
     background-color: white;
     min-height: 360px;
     border-radius: 20px;
-    padding: min(50px, 5vh);
+    padding: min(50px, 3vh);
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     align-items: center;
     gap: 24px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -153,7 +154,7 @@ header{
 .about_picture{
     width: 280px;
     height: 280px;
-    border: 8px solid #85A576;
+    border: 8px solid var(--other-details);
     border-radius: 160px 160px 20px 20px;
     background-image: url("icone.png");
     background-position: center;
@@ -231,7 +232,7 @@ header{
     height: 270px;
     border-radius: 10px;
     background-color: var(--secondary-details);
-    border: 6px solid var(--details);
+    border: 6px solid var(--secondary);
     background-position: center;
     background-size: cover;
 }
@@ -275,7 +276,7 @@ header{
     width: 46px;
     height: 46px;
     border-radius: 46px;
-    background-color: #839EC1;
+    background-color: var(--secondary);
     color: white;
     font-family: 'Patua One';
     font-size: 32px;
@@ -297,7 +298,7 @@ header{
 
 .project_link .fi{
     font-size: 32px;
-    color: #85A576;
+    color: var(--other-details);
 }
 
 .project_link .fi:hover{
@@ -307,7 +308,6 @@ header{
 .project_description{
     width: 100%;
     min-height: 210px;
-    background-color: var(--secondary-details);
     border-radius: 0 0 10px 10px;
     border-top: 1px solid var(--secondary);
 }
@@ -316,6 +316,18 @@ header{
     width: 100%;
     padding: 12px;
     text-align: center;
+    height: 136px;
+}
+
+.stack{
+    width: 100%;
+    border-top: 1px solid var(--details);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4px;
+    padding: 6px 2px;
+    font-size: 1.1rem;
 }
 
 .skills{
